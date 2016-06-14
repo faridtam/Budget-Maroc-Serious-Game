@@ -175,7 +175,8 @@
                 if (var1 === "" || var2 === "" || var3 === "" || var4 === "" || var5 === "" || var11 === "" || var22 === "" || var33 === "" || var44 === "" || var55 === "" || varmm === "" || varmm1 === "") {
 
                     $('#err').fadeIn().text("il faut remplire tout les champs ").css({
-                        "margin-left": "600px",
+                        "margin-left": "38%",
+                        "margin-top":"-9px",
                         "color": "red",
                         "position": "absolute",
                         "font-size": "13px"
@@ -185,7 +186,7 @@
                 else if (a == false || a2 == false || a3 == false || a4 == false || a5 == false || a31 == false || a41 == false || a51 == false || a21 == false || a1 == false) {
 
                     $('#err').fadeIn().text("il faut remplire avec des nombres").css({
-                        "margin-left": "600px",
+                        "margin-left": "-6.4%",
                         "color": "red",
                         "position": "absolute",
                         "font-size": "13px"
@@ -195,7 +196,8 @@
                 else if (((somme) != impot) || ((somme1) != impot)) {
 
                     $('#err').fadeIn().text("verifier que vous avez entrer les bonnes valeurs ").css({
-                        "margin-left": "600px",
+                        "margin-left": "38%",
+                        "margin-top":"-9px",
                         "color": "red",
                         "position": "absolute",
                         "font-size": "13px"
@@ -264,7 +266,9 @@
                     <ul class="dropdown-menu" style="height: 100px;">
                         <li class="dropdown-header" style="color: #18BC9C;">Your Hight Score</li>
                         <li align="center" style="margin-top: 15px;font-size: 24px;">
-                            <?php print_r($MAX); ?>
+                            <?php
+                            $MAX=round($MAX,2);
+                            print_r($MAX);?>
                         </li>
                     </ul>
                 </li>

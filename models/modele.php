@@ -44,7 +44,6 @@ class modele extends model{
 		$impot=array_column($impot, 'impot');
 		foreach ($impot as $lib){
 			$impot= $lib;
-			
 		}
         
         if($impot==null){
