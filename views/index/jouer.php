@@ -294,6 +294,7 @@
                     echo '<h4><kbd style="background:#18BC9C">Question: ';
                     print_r($id0);
                     echo ':</kbd> ';
+					$libelle0=utf8_encode($libelle0);
                     print_r($libelle0);
                     echo '</h4>';
                     ?>
@@ -475,6 +476,7 @@
                 echo '<h4><kbd style="background:#18BC9C">Question: ';
                 print_r($id1);
                 echo ':</kbd> ';
+				$libelle1=utf8_encode($libelle1);
                 print_r($libelle1);
                 echo '</h4>';
                 ?>
